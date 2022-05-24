@@ -96,3 +96,27 @@ print(listB) # print Statement 2
 ```
 
 
+# True or False
+
+```sh
+>>> round(1.5) == round(2.5)
+```
+
+## output 
+```sh
+>>> True
+```
+
+# What is the output ?
+```python3
+i = j = [3]
+i += j
+print(i, j)
+```
+
+## output
+```sh
+[3, 3] [3, 3]
+```
+## explanation
+After initialization i and j refer the same [3] list object. Since list is mutable the += operation modifies the original list in place to [3,3], which is still referenced by both i and j. so `print(i,j)` will print `[3,3], [3,3]`
